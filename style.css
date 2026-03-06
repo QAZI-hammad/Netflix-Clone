@@ -1,0 +1,206 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+/* NAVBAR */
+
+.header{
+position:absolute;
+width:100%;
+top:0;
+z-index:100;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+}
+
+.logo{
+width:170px;
+}
+
+.nav-menu{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-menu li{
+cursor:pointer;
+font-size:15px;
+}
+
+.btn{
+background:#e50914;
+border:none;
+color:white;
+padding:8px 18px;
+border-radius:4px;
+cursor:pointer;
+}
+
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url("images/hero-bg.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero-content h3{
+font-size:26px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+margin-bottom:20px;
+}
+
+.email-box{
+display:flex;
+justify-content:center;
+}
+
+.email-box input{
+padding:15px;
+width:300px;
+border:none;
+outline:none;
+}
+
+.email-box button{
+background:#e50914;
+border:none;
+padding:15px 25px;
+color:white;
+cursor:pointer;
+font-size:16px;
+}
+
+
+/* ROWS */
+
+.row{
+margin-top:50px;
+padding:20px 60px;
+}
+
+.row h2{
+margin-bottom:15px;
+}
+
+.row-posters{
+display:flex;
+overflow-x:auto;
+gap:15px;
+padding:10px 0;
+}
+
+.row-posters::-webkit-scrollbar{
+display:none;
+}
+
+.row-posters img{
+width:220px;
+border-radius:4px;
+transition:transform 0.3s;
+cursor:pointer;
+}
+
+.row-posters img:hover{
+transform:scale(1.12);
+}
+
+
+/* FOOTER */
+
+.footer{
+background:#000;
+margin-top:50px;
+padding:50px 60px;
+}
+
+.footer-cols{
+display:flex;
+gap:120px;
+margin-top:20px;
+}
+
+.footer-cols ul{
+list-style:none;
+}
+
+.footer-cols li{
+margin:10px 0;
+font-size:14px;
+color:#ccc;
+cursor:pointer;
+
+}
+
+.footer p{
+color:#ccc;
+display: flex;
+justify-content: center;
+}
+
+.copyright{
+margin-top:30px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.nav-menu{
+display:none;
+}
+
+.hero-content h1{
+font-size:38px;
+}
+
+.email-box{
+flex-direction:column;
+gap:10px;
+}
+
+.email-box input{
+width:100%;
+}
+
+.row{
+padding:20px;
+}
+
+.footer-cols{
+flex-direction:column;
+gap:20px;
+}
+
+}
